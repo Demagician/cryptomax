@@ -1,134 +1,106 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-import { signout } from './actions/userActions';
-import AdminRoute from './components/AdminRoute';
-import PrivateRoute from './components/PrivateRoute';
-import CartScreen from './screens/CartScreen';
+import { BrowserRouter, Link, Route } from 'react-router-dom';
+import AboutScreen from './screens/AboutScreen';
+import ContactScreen from './screens/ContactScreen';
+import DiversityScreen from './screens/DiversityScreen';
+import FaqScreen from './screens/FaqScreen';
 import HomeScreen from './screens/HomeScreen';
-import OrderHistoryScreen from './screens/OrderHistoryScreen';
-import OrderScreen from './screens/OrderScreen';
-import PaymentMethodScreen from './screens/PaymentMethodScreen';
-import PlaceOrderScreen from './screens/PlaceOrderScreen';
-import ProductListScreen from './screens/ProductListScreen';
-import ProductScreen from './screens/ProductScreen';
-import ProfileScreen from './screens/ProfileScreen';
+import LoginScreen from './screens/LoginScreen';
+import PrivacyScreen from './screens/PrivacyScreen';
 import RegisterScreen from './screens/RegisterScreen';
-import ShippingAddressScreen from './screens/ShippingAddressScreen';
-import SigninScreen from './screens/SigninScreen';
-import ProductEditScreen from './screens/ProductEditScreen';
-import OrderListScreen from './screens/OrderListScreen';
+import SponsoringScreen from './screens/SponsoringScreen';
+import TermsScreen from './screens/TermsScreen';
 
+function App(props) {
 
-function App() { 
-
-    const cart = useSelector((state) => state.cart);
-    const { cartItems } = cart;
-
-    const userSignin = useSelector((state) => state.userSignin);
-  const { userInfo } = userSignin;
-  const dispatch = useDispatch();
-  const signoutHandler = () => {
-    dispatch(signout());
-  };
+//   const loginHandler = ()=>{
+//     props.history.push('/login?redirect=shipping');
+// };
 
   return (
-    <BrowserRouter> 
-    <div className="grid-container">
-    <header className= "row">
+    <BrowserRouter>
+    <div className='fluid-container'>
+
+       <nav className="navbar navbar-expand-lg navbar-dark fixed nav2">
         <div>
-            <Link className="brand" to="/">amazona</Link>
+        <Link className="navbar-brand" to="/"> <img src="/image/bitcoin-trade-img.png" alt="Woox" className='logo-img' /></Link>
+      </div>
+      <div>
+        <button className="navbar-toggler tb" type="button" data-toggle="collapse" data-target="#dropdown"><span className="navbar-toggler-icon"></span></button>
+        <div className="collapse navbar-collapse nav-list" id="dropdown">
+          <ul className="navbar-nav ml-auto nav-bar-item">
+          <span class="dropdown">
+              <li className="nav-item dropbtn">
+                    <Link className="nav-l">Blog</Link>
+                </li>
+                 <span class="dropdown-content">
+                   <Link class="dropdown-item " to="/">Inspiration</Link>
+                   <Link class="dropdown-item " to="/">Company</Link>
+                   <Link class="dropdown-item " to="/">Engineering</Link>
+                 </span>
+             </span>
+
+          <span class="dropdown">
+              <li className="nav-item dropbtn">
+                    <Link className="nav-l">More</Link>
+                </li>
+                 <span class="dropdown-content">
+                   <a class="dropdown-item " href="/privacy">AML Policy</a>
+                   <a class="dropdown-item " href="/diversity">Diversity</a>
+                   <a class="dropdown-item " href="/sponsoring">Sponsoring</a>
+                 </span>
+             </span>
+
+             <span class="dropdown">
+              <li className="nav-item dropbtn">
+                    <Link className="nav-l">Help</Link>
+                </li>
+                 <span class="dropdown-content">
+                   <Link class="dropdown-item " to="/faq">FAQs</Link>
+                   <Link class="dropdown-item " to="/">Supporting articles</Link>
+                   <Link class="dropdown-item " to="/terms">Terms & Conditions</Link>
+                   <Link class="dropdown-item " to="/privacy">Privacy policy</Link>
+                 </span>
+             </span>
+            
+            <li className="nav-item">
+                <Link className="nav-l" to="/contact">Contact</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-l" to="/about">About</Link>
+            </li>
+            
+            <li className="nav-item">
+                <a className="nav-l" href="/login">Login</a>
+            </li> 
+
+            <li className='nav-item'>
+              <a className='nav-l' href='/register'>Register</a>
+            </li>
+          </ul>
         </div>
-        <div>
-            <Link to="/cart">Cart
-            {cartItems.length > 0 && (
-                <span className="badge">{cartItems.length}</span>
-            )}
-            </Link>
-            <Link to="/signin">Sign In</Link>
-            {userInfo ? (
-              <div className="dropdown">
-                <Link to="#">
-                  {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
-                </Link>
-                <ul className="dropdown-content">
-                <li>
-                    <Link to="/profile">User Profile</Link>
-                  </li>
-                <li>
-                    <Link to="/orderhistory">Order History</Link>
-                  </li>
-                  <li>
-                    <Link to="#signout" onClick={signoutHandler}>
-                      Sign Out
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            ) : (
-              <Link to="/signin">Sign In</Link>
-            )}
-             {userInfo && userInfo.isAdmin && (
-              <div className="dropdown">
-                <Link to="#admin">
-                  Admin <i className="fa fa-caret-down"></i>
-                </Link>
-                <ul className="dropdown-content">
-                  <li>
-                    <Link to="/dashboard">Dashboard</Link>
-                  </li>
-                  <li>
-                    <Link to="/productlist">Products</Link>
-                  </li>
-                  <li>
-                    <Link to="/orderlist">Orders</Link>
-                  </li>
-                  <li>
-                    <Link to="/userlist">Users</Link>
-                  </li>
-                </ul>
-              </div>
-            )}
         </div>
-    </header>
-    <main>
-        <Route path="/cart/:id?" component={CartScreen}></Route>
-        <Route path="/product/:id" component={ProductScreen} exact></Route>
-        <Route
-            path="/product/:id/edit"
-            component={ProductEditScreen}
-            exact
-          ></Route>
-        <Route path="/signin" component={SigninScreen}></Route>
-        <Route path="/register" component={RegisterScreen}></Route>
-        <Route path="/shipping" component={ShippingAddressScreen}></Route>
-        <Route path="/payment" component={PaymentMethodScreen}></Route>
-        <Route path="/placeorder" component={PlaceOrderScreen}></Route>
-        <Route path="/order/:id" component={OrderScreen}></Route>
-        <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
-        <Route path="/profile" component={ProfileScreen}></Route>
-        <PrivateRoute
-            path="/profile"
-            component={ProfileScreen}
-          ></PrivateRoute>
-            <AdminRoute
-            path="/productlist"
-            component={ProductListScreen}
-          ></AdminRoute>
-           <AdminRoute
-            path="/orderlist"
-            component={OrderListScreen}
-          ></AdminRoute>
-        <Route path="/" component={HomeScreen} exact></Route>   
-       
-    </main>
-    <footer className="row center">
-        All right reserved
-    </footer>
-</div>
-</BrowserRouter>
-    
+
+      </nav>
+
+      <main>
+
+        <Route path='/' component={HomeScreen} exact></Route>
+        <Route path='/register' component={RegisterScreen}></Route>
+        <Route path='/login' component={LoginScreen}></Route>
+        <Route path='/about' component={AboutScreen}></Route>
+        <Route path='/contact' component={ContactScreen}></Route>
+        <Route path='/faq' component={FaqScreen}></Route>
+        <Route path='/terms' component={TermsScreen}></Route>
+        <Route path='/privacy' component={PrivacyScreen}></Route>
+        <Route path='/sponsoring' component={SponsoringScreen}></Route>
+        <Route path='/diversity' component={DiversityScreen}></Route>
+        
+      </main>
+
+
+    </div>
+    </BrowserRouter>
   );
 }
 
