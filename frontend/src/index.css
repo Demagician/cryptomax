@@ -78,7 +78,7 @@ color: rgb(255, 186, 0);
   display:none;
   position: absolute;
   z-index: 2;
-  background: #131418;
+  /* background: #131418; */
   border-radius: 10px;
 }
 .dropdown-content a {
@@ -2257,6 +2257,16 @@ border-radius: 4px;
 
   body {
     width: 100%;
+  }
+
+  .dropbtn {
+    color: #A1ABBD;
+    margin-top: .7rem;
+  }
+
+  .dropdown-content {
+    position: relative;
+    right: 10px;
   }
 
   .header-section {

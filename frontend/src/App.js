@@ -10,6 +10,7 @@ import PrivacyScreen from './screens/PrivacyScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import SponsoringScreen from './screens/SponsoringScreen';
 import TermsScreen from './screens/TermsScreen';
+import ComingSoon from './screens/ComingSoonScreen';
 
 function App(props) {
 
@@ -31,18 +32,18 @@ function App(props) {
           <ul className="navbar-nav ml-auto nav-bar-item">
           <span class="dropdown">
               <li className="nav-item dropbtn">
-                    <Link className="nav-l">Blog</Link>
+                    <Link className="nav-l">Blog <i class="fas fa-caret-down"></i></Link>
                 </li>
                  <span class="dropdown-content">
-                   <Link class="dropdown-item " to="/">Inspiration</Link>
-                   <Link class="dropdown-item " to="/">Company</Link>
-                   <Link class="dropdown-item " to="/">Engineering</Link>
+                   <a class="dropdown-item " href="/comingsoon">Inspiration</a>
+                   <a class="dropdown-item " href="/comingsoon">Company </a>
+                   <a class="dropdown-item " href="/comingsoon">Engineering</a>
                  </span>
              </span>
 
           <span class="dropdown">
               <li className="nav-item dropbtn">
-                    <Link className="nav-l">More</Link>
+                    <Link className="nav-l">More  <i class="fas fa-caret-down"></i></Link>
                 </li>
                  <span class="dropdown-content">
                    <a class="dropdown-item " href="/privacy">AML Policy</a>
@@ -53,28 +54,28 @@ function App(props) {
 
              <span class="dropdown">
               <li className="nav-item dropbtn">
-                    <Link className="nav-l">Help</Link>
+                    <Link className="nav-l">Help  <i class="fas fa-caret-down"></i></Link>
                 </li>
                  <span class="dropdown-content">
-                   <Link class="dropdown-item " to="/faq">FAQs</Link>
-                   <Link class="dropdown-item " to="/">Supporting articles</Link>
-                   <Link class="dropdown-item " to="/terms">Terms & Conditions</Link>
-                   <Link class="dropdown-item " to="/privacy">Privacy policy</Link>
+                   <a class="dropdown-item " href="/faq">FAQs</a>
+                   <a class="dropdown-item " href="/">Supporting articles</a>
+                   <a class="dropdown-item " href="/terms">Terms & Conditions</a>
+                   <a class="dropdown-item " href="/privacy">Privacy policy</a>
                  </span>
              </span>
             
-            <li className="nav-item">
+            <li className="nav-item dropbtn">
                 <Link className="nav-l" to="/contact">Contact</Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item dropbtn">
                 <Link className="nav-l" to="/about">About</Link>
             </li>
             
-            <li className="nav-item">
+            <li className="nav-item dropbtn">
                 <a className="nav-l" href="/login">Login</a>
             </li> 
 
-            <li className='nav-item'>
+            <li className='nav-item dropbtn'>
               <a className='nav-l' href='/register'>Register</a>
             </li>
           </ul>
@@ -95,6 +96,7 @@ function App(props) {
         <Route path='/privacy' component={PrivacyScreen}></Route>
         <Route path='/sponsoring' component={SponsoringScreen}></Route>
         <Route path='/diversity' component={DiversityScreen}></Route>
+        <Route path='/comingsoon' component={ComingSoon}></Route>
         
       </main>
 
