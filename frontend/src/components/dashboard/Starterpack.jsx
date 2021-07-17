@@ -20,12 +20,12 @@ export default function Starterpack() {
                     <div className='invest-all-box'>
                         <div className='invest-box'>
                            PREMIUM PACK
-                            <div className='invest-box-btc'>0.0014BTC</div> 
+                            <div className='invest-box-btc'>$50</div> 
                             <div className='invest-box-text-1'>For 24 Hour(s)</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>10% daily top up</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 20%</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>0.027BTC max investment</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 40%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 60%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>$999 max investment</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 120%</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>2% referral percent</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>5% profit bonus</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 50</div>

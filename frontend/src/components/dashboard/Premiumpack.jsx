@@ -20,12 +20,12 @@ export default function Premiumpack() {
                     <div className='invest-all-box'>
                         <div className='invest-box'>
                            PREMIUM PACK
-                            <div className='invest-box-btc'>0.028BTC</div> 
-                            <div className='invest-box-text-1'>For 1 week(s)</div>
+                            <div className='invest-box-btc'>$1000</div> 
+                            <div className='invest-box-text-1'>For 48 Hours(s)</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>50% weekly top up</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 60%</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>0.27BTC max investment</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 120%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 120%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>$9,999 max investment</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 200%</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>5% referral percent</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>8% profit bonus</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 1000</div>

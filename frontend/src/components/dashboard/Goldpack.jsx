@@ -23,15 +23,15 @@ export default function Goldpack() {
                     <div className='invest-all-box'>
                         <div className='invest-box'>
                            GOLD PACK
-                            <div className='invest-box-btc'>0.28BTC</div> 
-                            <div className='invest-box-text-1'>For 1 month(s)</div>
+                            <div className='invest-box-btc'>$1,000</div> 
+                            <div className='invest-box-text-1'>For 1 Hour</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>3.5% hourly top up</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 110%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 300%</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>1BTC max investment</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 210%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 400%</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>10% referral percent</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>15% profit bonus</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 10000</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 1000</div>
                             <div className='invest-box-link-button'>
                             <button type='button' className='invest-box-button' data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Calculate profit</button>
                             <button type='button' className='invest-box-link' data-toggle='modal' data-target="#purchasemodal" data-whatever='@mdo'>Purchase plan</button>  
