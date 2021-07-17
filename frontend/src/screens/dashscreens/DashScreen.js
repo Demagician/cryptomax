@@ -66,7 +66,7 @@ export default function DashScreen(){
                             Popular Invested
                             <div className='dash-col-2-invest-btc'>0.028BTC</div> 
                             <div className='dash-col-2-invest-text'>Premium Pack</div>
-                            <div className='dash-col-2-invest-text'>For 1 month(s)</div>
+                            <div className='dash-col-2-invest-text'>For 1 week(s)</div>
                             <div className='dash-col-2-invest-text'>50% weekly top up</div>
                             <div className='dash-col-2-invest-text'>interest 60%</div>
                             <div className='dash-col-2-invest-text'>0.27BTC max investment</div>

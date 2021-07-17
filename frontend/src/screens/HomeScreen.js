@@ -315,7 +315,7 @@ export default function HomeScreen() {
           <div className='investment-price-btc'>0.028BTC</div>
         </div>
         <div className='investment-text'>Duration:</div>
-        <div className='investment-duration'>FOR 1month(s)</div>
+        <div className='investment-duration'>FOR 1 week(s)</div>
         <hr/>
         <div className='investment-text'>Earn:</div>
         <div className='investment-duration'>50% WEEKLY</div>
