@@ -11,7 +11,7 @@ export default function Premiumpack() {
     }
 
     function handleClickp() {
-        setResultp(btcp * 1.8);
+        setResultp(btcp/100 * 150);
     }
 
     return (
@@ -20,12 +20,12 @@ export default function Premiumpack() {
                     <div className='invest-all-box'>
                         <div className='invest-box'>
                            PREMIUM PACK
-                            <div className='invest-box-btc'>$1000</div> 
+                            <div className='invest-box-btc'>$1,000</div> 
                             <div className='invest-box-text-1'>For 48 Hours(s)</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>50% weekly top up</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 120%</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>$9,999 max investment</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 200%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 50%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>$4,999 max investment</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 100%</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>5% referral percent</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>8% profit bonus</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 1000</div>
@@ -69,14 +69,14 @@ export default function Premiumpack() {
                                 <div class="modal-body">
                                 
                                 {
-                                    btcp < 0.028 ? 
+                                    btcp < 1000 ? 
                                     <div>
                                    <span className='non-i'> <i class="fas fa-exclamation"></i></span>
                                     <div className='cal-title'>Sorry!</div>
                                     <div className='non-result'>value is less than minimum deposit</div> 
                                     </div>  
                                     : 
-                                     btcp >= 0.27 ?
+                                     btcp >= 4999 ?
                                       <div>
                                     <span className='non-i'> <i class="fas fa-exclamation"></i></span>
                                     <div className='cal-title'>Sorry!</div>

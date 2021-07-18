@@ -293,13 +293,13 @@ export default function HomeScreen() {
         <h3 className='investplan-name'>STARTER PACK</h3>
         <div className='investment-price'>
           <div className='investment-text'>Price:</div>
-          <div className='investment-price-btc'>0.0014BTC</div>
+          <div className='investment-price-btc'>$50</div>
         </div>
         <div className='investment-text'>Duration:</div>
         <div className='investment-duration'>FOR 24hours</div>
         <hr/>
         <div className='investment-text'>Earn:</div>
-        <div className='investment-duration'>10% DAILY</div>
+        <div className='investment-duration'>20% DAILY</div>
         <hr/>
         <div className='investment-text'>USD:</div>
         <div className='investment-duration'>50$</div>
@@ -312,13 +312,13 @@ export default function HomeScreen() {
         <h3 className='investplan-name'>PREMIUM PACK</h3>
         <div className='investment-price'>
           <div className='investment-text'>Price:</div>
-          <div className='investment-price-btc'>0.028BTC</div>
+          <div className='investment-price-btc'>$1,000</div>
         </div>
         <div className='investment-text'>Duration:</div>
-        <div className='investment-duration'>FOR 1 week(s)</div>
+        <div className='investment-duration'>FOR 48 Hour(s)</div>
         <hr/>
         <div className='investment-text'>Earn:</div>
-        <div className='investment-duration'>50% WEEKLY</div>
+        <div className='investment-duration'>50% Hourly</div>
         <hr/>
         <div className='investment-text'>USD:</div>
         <div className='investment-duration'>1000$</div>
@@ -331,16 +331,16 @@ export default function HomeScreen() {
         <h3 className='investplan-name'>GOLD PACK</h3>
         <div className='investment-price'>
           <div className='investment-text'>Price:</div>
-          <div className='investment-price-btc'>0.28BTC</div>
+          <div className='investment-price-btc'>$5,000</div>
         </div>
         <div className='investment-text'>Duration:</div>
         <div className='investment-duration'>HOURLY</div>
         <hr/>
         <div className='investment-text'>Earn:</div>
-        <div className='investment-duration'>5.0% hourly</div>
+        <div className='investment-duration'>100% hourly</div>
         <hr/>
         <div className='investment-text'>USD:</div>
-        <div className='investment-duration'>10000$</div>
+        <div className='investment-duration'>5000$</div>
         <hr/>
       </div>
     </div>

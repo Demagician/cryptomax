@@ -11,7 +11,7 @@ export default function Starterpack() {
     }
 
     function handleClickp() {
-        setResultp(btcp * 0.75);
+        setResultp(btcp/100 * 120);
     }
 
     return (
@@ -19,7 +19,7 @@ export default function Starterpack() {
                     <div className='col-lg-4'>
                     <div className='invest-all-box'>
                         <div className='invest-box'>
-                           PREMIUM PACK
+                           STARTER PACK
                             <div className='invest-box-btc'>$50</div> 
                             <div className='invest-box-text-1'>For 24 Hour(s)</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>10% daily top up</div>
@@ -47,7 +47,7 @@ export default function Starterpack() {
                                 <div class="modal-body">
                                     <div className='modal-pack'>STARTER PACK</div>
                                     <div class="form-group">
-                                    <span className='calculate-input-btc'>BTC<input type='tel' className='calculate-input' 
+                                    <span className='calculate-input-btc'>USD<input type='tel' className='calculate-input' 
                                     onChange={handleChangep}
                                     value={btcp} 
                                     /></span>
@@ -69,14 +69,14 @@ export default function Starterpack() {
                                 <div class="modal-body">
                                 
                                 {
-                                    btcp < 0.0014 ? 
+                                    btcp < 50 ? 
                                     <div>
                                    <span className='non-i'> <i class="fas fa-exclamation"></i></span>
                                     <div className='cal-title'>Sorry!</div>
                                     <div className='non-result'>value is less than minimum deposit</div> 
                                     </div>  
                                     : 
-                                     btcp >= 0.027 ?
+                                     btcp >= 999 ?
                                       <div>
                                     <span className='non-i'> <i class="fas fa-exclamation"></i></span>
                                     <div className='cal-title'>Sorry!</div>
@@ -86,7 +86,7 @@ export default function Starterpack() {
                                     <div>
                                     <span className='result-icon'><i class="far fa-check-circle"></i></span>
                                     <div className='cal-title'>Success!</div>
-                                    <div className='cal-result'>{resultp}BTC</div>
+                                    <div className='cal-result'>{resultp}USD</div>
                                     </div>
                                     
                                 }
@@ -110,7 +110,7 @@ export default function Starterpack() {
                                 <div class="modal-body">
                                     <div className='modal-pack'>STARTER PACK</div>
                                     <div class="form-group">
-                                    <span className='calculate-input-btc'>BTC<input type='text' className='calculate-input' required/></span>
+                                    <span className='calculate-input-btc'>USD<input type='text' className='calculate-input' required/></span>
                                     </div>
                                
                                 </div>

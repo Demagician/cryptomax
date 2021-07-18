@@ -28,13 +28,13 @@ export default function DashScreen(){
                         <div className='dash-col-2-box-in'>
                             <div className='dash-col-2-invest'>
                             Most Invested
-                            <div className='dash-col-2-invest-btc'>0.28BTC</div> 
+                            <div className='dash-col-2-invest-btc'>$5,000</div> 
                             <div className='dash-col-2-invest-text'>Gold Pack</div>
-                            <div className='dash-col-2-invest-text'>For 1 month(s)</div>
+                            <div className='dash-col-2-invest-text'>For 1 Hour(s)</div>
                             <div className='dash-col-2-invest-text'>3.5% daily top up</div>
-                            <div className='dash-col-2-invest-text'>interest 110%</div>
-                            <div className='dash-col-2-invest-text'>1 BTC max investment</div>
-                            <div className='dash-col-2-invest-text'>compound interest 210%</div>
+                            <div className='dash-col-2-invest-text'>interest 100%</div>
+                            <div className='dash-col-2-invest-text'>max-investment: ULTD</div>
+                            <div className='dash-col-2-invest-text'>compound interest 200%</div>
                             <div className='dash-col-2-invest-text'>10% referral percent</div>
                             <div className='dash-col-2-invest-text'>15% profit bonus</div>
                             </div>
@@ -64,13 +64,13 @@ export default function DashScreen(){
                         <div className='dash-col-2-box-in'>
                             <div className='dash-col-2-invest'>
                             Popular Invested
-                            <div className='dash-col-2-invest-btc'>0.028BTC</div> 
+                            <div className='dash-col-2-invest-btc'>$1,000</div> 
                             <div className='dash-col-2-invest-text'>Premium Pack</div>
-                            <div className='dash-col-2-invest-text'>For 1 week(s)</div>
+                            <div className='dash-col-2-invest-text'>For 48 Hours(s)</div>
                             <div className='dash-col-2-invest-text'>50% weekly top up</div>
-                            <div className='dash-col-2-invest-text'>interest 60%</div>
-                            <div className='dash-col-2-invest-text'>0.27BTC max investment</div>
-                            <div className='dash-col-2-invest-text'>compound interest 120%</div>
+                            <div className='dash-col-2-invest-text'>interest 50%</div>
+                            <div className='dash-col-2-invest-text'>$4,999 max investment</div>
+                            <div className='dash-col-2-invest-text'>compound interest 100%</div>
                             <div className='dash-col-2-invest-text'>5% referral percent</div>
                             <div className='dash-col-2-invest-text'>8% profit bonus</div>
                             </div>

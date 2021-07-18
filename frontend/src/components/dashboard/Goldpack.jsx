@@ -12,7 +12,7 @@ export default function Goldpack() {
     }
 
     function handleClick() {
-        setResult(btc * 2.1);
+        setResult(btc * 2);
         
     }
 
@@ -23,15 +23,15 @@ export default function Goldpack() {
                     <div className='invest-all-box'>
                         <div className='invest-box'>
                            GOLD PACK
-                            <div className='invest-box-btc'>$1,000</div> 
-                            <div className='invest-box-text-1'>For 1 Hour</div>
+                            <div className='invest-box-btc'>$5,000</div> 
+                            <div className='invest-box-text-1'>For 1 Hour(s)</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>3.5% hourly top up</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 300%</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>1BTC max investment</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 400%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 100%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>max-investment: ULTD</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 200%</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>10% referral percent</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>15% profit bonus</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 1000</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 5000</div>
                             <div className='invest-box-link-button'>
                             <button type='button' className='invest-box-button' data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Calculate profit</button>
                             <button type='button' className='invest-box-link' data-toggle='modal' data-target="#purchasemodal" data-whatever='@mdo'>Purchase plan</button>  
@@ -50,7 +50,7 @@ export default function Goldpack() {
                                 <div class="modal-body">
                                     <div className='modal-pack'>GOLD PACK</div>
                                     <div class="form-group">
-                                    <span className='calculate-input-btc'>BTC<input type='tel' className='calculate-input' 
+                                    <span className='calculate-input-btc'>USD<input type='tel' className='calculate-input' 
                                     onChange={handleChange}
                                     value={btc} 
                                     /></span>
@@ -72,7 +72,7 @@ export default function Goldpack() {
                                 <div class="modal-body">
                                 
                                 {
-                                    btc < 0.28 ? 
+                                    btc < 5000 ? 
                                     <div>
                                    <span className='non-i'> <i class="fas fa-exclamation"></i></span>
                                     <div className='cal-title'>Sorry!</div>
@@ -82,7 +82,7 @@ export default function Goldpack() {
                                     <div>
                                     <span className='result-icon'><i class="far fa-check-circle"></i></span>
                                     <div className='cal-title'>Success!</div>
-                                    <div className='cal-result'>{result}BTC</div>
+                                    <div className='cal-result'>{result}USD</div>
                                     </div>
                                 }
                                     
