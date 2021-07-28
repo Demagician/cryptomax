@@ -2716,6 +2716,20 @@ border-radius: 4px;
     max-height: 500px;
   }
 
+  /******* user edit admin view ********/
+
+  .user-edit-container {
+    font-size: .8rem;
+  }
+
+ .user-edit-header {
+    font-size: .9rem;
+  }
+
+  .user-withdraw-header {
+    font-size: .9rem;
+  }
+
   .fd {
     display: none;
   }

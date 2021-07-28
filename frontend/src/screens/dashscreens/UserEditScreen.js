@@ -82,6 +82,7 @@ export default function UserEditScreen(props) {
                     <input
                      id="name" 
                      type="text" 
+                     className='user-edit-input'
                      placeholder="Enter name" 
                      value={name} 
                      onChange = {(e) => setName(e.target.value)}
@@ -93,6 +94,7 @@ export default function UserEditScreen(props) {
                     <input
                      id="email" 
                      type="email" 
+                     className='user-edit-input'
                      placeholder="Enter email" 
                      value={email} 
                      onChange = {(e) => setEmail(e.target.value)}
@@ -104,6 +106,7 @@ export default function UserEditScreen(props) {
                     <input
                      id="mobile" 
                      type="tel" 
+                     className='user-edit-input'
                      value={mobile} 
                      onChange = {(e) => setMobile(e.target.value)}
                      ></input>
@@ -114,6 +117,7 @@ export default function UserEditScreen(props) {
                     <input
                      id="country" 
                      type="text" 
+                     className='user-edit-input'
                      value={country} 
                      onChange = {(e) => setCountry(e.target.value)}
                      ></input>
@@ -124,6 +128,7 @@ export default function UserEditScreen(props) {
                     <input
                      id="city" 
                      type="text" 
+                     className='user-edit-input'
                      value={city} 
                      onChange = {(e) => setEmail(e.target.value)}
                      ></input>
@@ -133,7 +138,8 @@ export default function UserEditScreen(props) {
                     <label htmlForm="zip">Zip code</label>
                     <input
                      id="zip" 
-                     type="text"  
+                     type="text" 
+                     className='user-edit-input' 
                      value={zip} 
                      onChange = {(e) => setZip(e.target.value)}
                      ></input>
@@ -144,6 +150,7 @@ export default function UserEditScreen(props) {
                     <input
                      id="address" 
                      type="text" 
+                     className='user-edit-input'
                      value={address} 
                      onChange = {(e) => setAddress(e.target.value)}
                      ></input>
@@ -154,6 +161,7 @@ export default function UserEditScreen(props) {
                     <input
                      id="userDeposit" 
                      type="tel" 
+                     className='user-edit-input'
                      value={userDeposit} 
                      onChange = {(e) => setUserDeposit(e.target.value)}
                      ></input>
@@ -164,6 +172,7 @@ export default function UserEditScreen(props) {
                     <input
                      id="userProfit" 
                      type="tel" 
+                     className='user-edit-input'
                      value={userProfit} 
                      onChange = {(e) => setUserProfit(e.target.value)}
                      ></input>
@@ -174,6 +183,7 @@ export default function UserEditScreen(props) {
                     <input
                      id="isAdmin" 
                      type="checkbox" 
+                     className='user-edit-input'
                      checked={isAdmin}
                      onChange = {(e) => setIsAdmin(e.target.checked)}
                      ></input>
@@ -198,6 +208,7 @@ export default function UserEditScreen(props) {
                     <input
                      id="withdrawStatus" 
                      type="text" 
+                     className='user-edit-input'
                      value={withdrawStatus} 
                      onChange = {(e) => setWithdrawStatus(e.target.value)}
                      ></input>
@@ -207,6 +218,7 @@ export default function UserEditScreen(props) {
                     <input
                      id="pendingRequest" 
                      type="text" 
+                     className='user-edit-input'
                      value={pendingRequest} 
                      onChange = {(e) => setPendingRequest(e.target.value)}
                      ></input>
