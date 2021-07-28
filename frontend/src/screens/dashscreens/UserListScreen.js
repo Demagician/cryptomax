@@ -41,6 +41,7 @@ export default function UserListScreen(props) {
                 error? (<MessageBox variant="danger">{error}</MessageBox>)
                 :
                 (
+                    <div style={{overflow: 'auto'}}>
                     <table className="table">
                         <thead>
                             <tr>
@@ -68,6 +69,7 @@ export default function UserListScreen(props) {
                             }
                         </tbody>
                     </table>
+                    </div>
                 )
             }
         </div>

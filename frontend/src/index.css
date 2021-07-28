@@ -1171,6 +1171,7 @@ hr {
   width: 100%;
   border-collapse: collapse;
   font-size: .8rem;
+  border-spacing: 0;
 }
 .table tbody tr:nth-of-type(odd) {
   background-color: #f4f4f4;
@@ -2706,7 +2707,6 @@ border-radius: 4px;
 }
   
 }
-
 
 /**************************** 512 width mobile responsive ***********************/
 
