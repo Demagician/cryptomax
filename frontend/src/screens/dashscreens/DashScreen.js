@@ -1,9 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { detailsUser } from '../../actions/userActions';
 import Username from '../../components/dashboard/Username';
 import Help from '../../components/Help';
+import { USER_UPDATE_PROFILE_RESET } from '../../constants/userConstants';
 
 export default function DashScreen(){
+
+    const [userProfit, setUserProfit] = useState(0);
+    const [userDeposit, setuserDeposit] = useState(0);
+
+    const userSignin = useSelector((state) => state.userSignin);
+    const { userInfo } = userSignin;
+
+    const userDetails = useSelector(state => state.userDetails);
+    const { loading, error, user} = userDetails;
+
+    const dispatch = useDispatch();
+    useEffect(() => {
+        if (!user) { 
+            dispatch({ type: USER_UPDATE_PROFILE_RESET})
+            dispatch(detailsUser(userInfo._id));
+        }else {
+            setUserProfit(user.userProfit)
+            setuserDeposit(user.userDeposit)
+        }
+    }, [dispatch, userInfo._id, user, userInfo]);
+
     return (
         <div>
                   <div className='row row-2'>  
@@ -12,7 +36,7 @@ export default function DashScreen(){
                         <div className='dash-col-2-box'>
                             <div className='dash-col-2-text'>
                             Available profit
-                            <div className='dash-col-2-btc'>0BTC</div>
+                            <div className='dash-col-2-btc'>${userProfit || 0}</div>
                             </div>
                         </div>                     
                         <div className='dash-col-2-box-in'>
@@ -47,7 +71,7 @@ export default function DashScreen(){
                     <div className='dash-col-2-box'>
                         <div className='dash-col-2-text'>
                             Total Balance
-                            <div className='dash-col-2-btc'>0BTC</div>
+                            <div className='dash-col-2-btc'>${userDeposit + userProfit || 0}</div>
                         </div>
                     </div>     
                     <div className='dash-col-2-box-in'>

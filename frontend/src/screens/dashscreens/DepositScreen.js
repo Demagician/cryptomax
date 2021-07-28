@@ -1,19 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { detailsUser } from '../../actions/userActions';
 import Username from '../../components/dashboard/Username';
 import Help from '../../components/Help';
 import Log from '../../components/Log';
+import { USER_UPDATE_PROFILE_RESET } from '../../constants/userConstants';
 
 export default function DepositScreen(props) {
 
-    // const [usd, setUsd] = useState('');
-    // const [amount, setAmount] = useState('');
+    const [userDeposit, setUserDeposit] = useState(0);
+
+    const userSignin = useSelector((state) => state.userSignin);
+    const { userInfo } = userSignin;
+
+    const userDetails = useSelector(state => state.userDetails);
+    const { loading, error, user} = userDetails;
+
+    const dispatch = useDispatch();
+    useEffect(() => {
+        if (!user) { 
+            dispatch({ type: USER_UPDATE_PROFILE_RESET})
+            dispatch(detailsUser(userInfo._id));
+        }else {
+            setUserDeposit(user.userDeposit)
+        }
+    }, [dispatch, userInfo._id, user, userInfo]);
+    var total_deposit = 0;
+    total_deposit += userDeposit;
     
-
-    const handleChange = (event) => {
-        // setUsd(event.target.value)
-    }
-
     const submitUsd = () => {
         props.history.push('/coinpayment');
         // setAmount(usd);
@@ -35,7 +50,25 @@ export default function DepositScreen(props) {
                         </div>                      
                         <div className='deposit-text'>
                         Charge: $0.51 + 2.52%
+                        </div>  
+
+                        <div className='deposit-status-header'>Deposit Status</div>
+                        <div className='deposit-status'>
+                        <div className='deposit-text'>
+                          Active Deposit
                         </div>                      
+                        <div className='deposit-text'>
+                          ${userDeposit || 0}
+                        </div>  
+                        </div>                     
+                        <div className='deposit-status'>
+                        <div className='deposit-text'>
+                        Total Deposit
+                        </div>                      
+                        <div className='deposit-text'>
+                          ${total_deposit || 0}
+                        </div>  
+                        </div>                     
                     </div>                         
                 </div>
 
@@ -51,7 +84,7 @@ export default function DepositScreen(props) {
                                     <form>
                                     <div class="form-group">
                                     <span className='calculate-input-btc'>USD<input type='text' className='calculate-input'
-                                    onChange={handleChange} required/></span>
+                                     required/></span>
                                     </div>
                                
                                

@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import Username from './Username';
 
 export default function Goldpack() {
+
+    const userSignin = useSelector(state => state.userSignin)
+    const { userInfo } = userSignin
 
     const [btc, setBtc] = useState();
     const [result, setResult] = useState();
@@ -34,7 +38,7 @@ export default function Goldpack() {
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 5000</div>
                             <div className='invest-box-link-button'>
                             <button type='button' className='invest-box-button' data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Calculate profit</button>
-                            <button type='button' className='invest-box-link' data-toggle='modal' data-target="#purchasemodal" data-whatever='@mdo'>Purchase plan</button>  
+                            <button type='button' className='invest-box-link' data-toggle='modal' data-target="#purchasemodal-2" data-whatever='@mdo'>Purchase plan</button>  
                             </div> 
                             </div>
 
@@ -96,7 +100,7 @@ export default function Goldpack() {
                             </div>
                             </div>
 
-                            <div class="modal fade" id="purchasemodal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+                            {/* <div class="modal fade" id="purchasemodal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content modal-sm center">
                                 <div class="calculat-modal-bg">
@@ -105,7 +109,7 @@ export default function Goldpack() {
                                 <div class="modal-body">
                                     <div className='modal-pack'>GOLD PACK</div>
                                     <div class="form-group">
-                                    <span className='calculate-input-btc'>BTC<input type='text' className='calculate-input' required/></span>
+                                    <span className='calculate-input-btc'>USD<input type='text' className='calculate-input' required/></span>
                                     </div>
                                
                                 </div>
@@ -115,15 +119,30 @@ export default function Goldpack() {
                                 </div>
                                 </div>
                             </div>
-                            </div>
+                            </div> */}
 
                             <div class="modal fade" id="purchasemodal-2" tabindex="-1" aria-labelledby="purchaseModalLabel-2" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content modal-sm center">
                                 <div class="calculat-modal-bg">          
                                 <div class="modal-body-2">
-                                <i class="fas fa-exclamation"></i>
-                                    <div className='cal-title'>Insufficient fund</div>
+                                   {
+                                        userInfo.userDeposit < 5000
+                                        ?
+                                        <div>
+                                        <i class="fas fa-exclamation"></i>
+                                        <div className='cal-title'>Insufficient fund</div>
+                                        </div>
+                                        :
+                                        <div>
+                                        <span className='result-icon'><b class="far fa-check-circle"></b></span>
+                                        <div className='cal-title'>Success!</div>
+                                        <div className='cal-result'>
+                                           You have successfully started your investment. Congratulations! on your first step to become a 
+                                           successfull investor. You will earn %100 of your investment after 24 hours.
+                                        </div>
+                                        </div>
+                                    }
                                    
                                     <button type="button" class="close-button" data-dismiss="modal" aria-label="Close">
                                     OK

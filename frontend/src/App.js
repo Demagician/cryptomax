@@ -32,7 +32,7 @@ function App(props) {
           <ul className="navbar-nav ml-auto nav-bar-item">
           <span class="dropdown">
               <li className="nav-item dropbtn">
-                    <Link className="nav-l">Blog <i class="fas fa-caret-down"></i></Link>
+                    <Link className="nav-l">Blog {' '} <i class="fas fa-caret-down"></i></Link>
                 </li>
                  <span class="dropdown-content">
                    <a class="dropdown-item " href="/comingsoon">Inspiration</a>
@@ -43,7 +43,7 @@ function App(props) {
 
           <span class="dropdown">
               <li className="nav-item dropbtn">
-                    <Link className="nav-l">More  <i class="fas fa-caret-down"></i></Link>
+                    <Link className="nav-l">More {' '}  <i class="fas fa-caret-down"></i></Link>
                 </li>
                  <span class="dropdown-content">
                    <a class="dropdown-item " href="/privacy">AML Policy</a>
@@ -54,7 +54,7 @@ function App(props) {
 
              <span class="dropdown">
               <li className="nav-item dropbtn">
-                    <Link className="nav-l">Help  <i class="fas fa-caret-down"></i></Link>
+                    <Link className="nav-l">Help {' '}  <i class="fas fa-caret-down"></i></Link>
                 </li>
                  <span class="dropdown-content">
                    <a class="dropdown-item " href="/faq">FAQs</a>

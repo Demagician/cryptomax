@@ -11,6 +11,7 @@ export default function RegisterScreen(props){
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [mobile, setMobile] = useState('');
+    const [country, setCountry] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
@@ -24,7 +25,7 @@ export default function RegisterScreen(props){
         if(password !== confirmPassword) {
             alert('Password and confirm password are not match')
         }else {
-            dispatch(register(name, username, email, mobile, password));
+            dispatch(register(name, username, email, mobile, country, password));
         }  
     };
     useEffect(() => {
@@ -72,6 +73,9 @@ export default function RegisterScreen(props){
                         <br/>
                     <span className='input-box'> <i class="fas fa-mobile-alt"></i> <input type='tel' name='' className='register-input' placeholder='Mobile'
                         onChange={(e) => setMobile(e.target.value)}/></span>
+                        {/* <br/>
+                    <span className='input-box'> <i class="fas fa-mobile-alt"></i> <input type='text' name='' className='register-input' placeholder='country'
+                        onChange={(e) => setCountry(e.target.value)}/></span> */}
                         <br/>
                         <span className='input-box'><i class="fas fa-unlock-alt"></i><input type='password' name='' className='register-input' placeholder='Password'
                         onChange={(e) => setPassword(e.target.value)}

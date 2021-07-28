@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Username from '../../components/dashboard/Username';
 import Help from '../../components/Help';
 
 export default function SupportScreen() {
+
+    // const [you, setYou] = useState(0)
+
+    // setInterval(update, 10000);
+
+    // function update() {
+    //     setYou(10)
+    // }
+
+
     return (
         <div>
             <div className='row share-row'>
@@ -13,6 +23,9 @@ export default function SupportScreen() {
                     <button type='button' className='share-box-button' data-toggle="modal" data-target="#staticBackdrop">
                     <i class="fas fa-arrow-right"></i> Create request
                     </button>
+                    {/* <div className='share-box-button'>
+                     {you}
+                   </div> */}
                 </div>
 
                 {/* <!-- Modal --> */}

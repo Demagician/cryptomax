@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 export default function Starterpack() {
+
+    const userSignin = useSelector((state) => state.userSignin);
+    const { userInfo } = userSignin;
 
     const [btcp, setBtcp] = useState();
     const [resultp, setResultp] = useState();
@@ -22,7 +26,7 @@ export default function Starterpack() {
                            STARTER PACK
                             <div className='invest-box-btc'>$50</div> 
                             <div className='invest-box-text-1'>For 24 Hour(s)</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>10% daily top up</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>20% daily top up</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 60%</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>$999 max investment</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 120%</div>
@@ -31,7 +35,7 @@ export default function Starterpack() {
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 50</div>
                             <div className='invest-box-link-button'>
                             <button type='button' className='invest-box-button' data-toggle="modal" data-target="#sexampleModal" data-whatever="@mdo">Calculate profit</button>
-                            <button type='button' className='invest-box-link' data-toggle='modal' data-target="#spurchasemodal" data-whatever='@mdo'>Purchase plan</button>  
+                            <button type='button' className='invest-box-link' data-toggle='modal' data-target="#spurchasemodal-2" data-whatever='@mdo'>Purchase plan</button>  
                             </div> 
                             </div>
 
@@ -101,7 +105,7 @@ export default function Starterpack() {
                             </div>
                             </div>
 
-                            <div class="modal fade" id="spurchasemodal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+                            {/* <div class="modal fade" id="spurchasemodal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content modal-sm center">
                                 <div class="calculat-modal-bg">
@@ -120,15 +124,32 @@ export default function Starterpack() {
                                 </div>
                                 </div>
                             </div>
-                            </div>
+                            </div> */}
 
-                            <div class="modal fade" id="spurchasemodal-2" tabindex="-1" aria-labelledby="purchaseModalLabel-2" aria-hidden="true">
-                            <div class="modal-dialog">
+        
+                                <div class="modal fade" id="spurchasemodal-2" tabindex="-1" aria-labelledby="purchaseModalLabel-2" aria-hidden="true">
+                                <div class="modal-dialog">
                                 <div class="modal-content modal-sm center">
                                 <div class="calculat-modal-bg">          
                                 <div class="modal-body-2">
-                                <i class="fas fa-exclamation"></i>
-                                    <div className='cal-title'>Insufficient fund</div>
+                                    {
+                                        userInfo.userDeposit < 50 
+                                        ?
+                                        <div>
+                                        <i class="fas fa-exclamation"></i>
+                                        <div className='cal-title'>Insufficient fund</div>
+                                        </div>
+                                        :
+                                        <div>
+                                        <span className='result-icon'><b class="far fa-check-circle"></b></span>
+                                        <div className='cal-title'>Success!</div>
+                                        <div className='cal-result'>
+                                           You have successfully started your investment. Congratulations! on your first step to become a 
+                                           successfull investor. You will earn %20 of your investment after after 24hours.
+                                        </div>
+                                        </div>
+                                    }
+                                    
                                    
                                     <button type="button" class="close-button" data-dismiss="modal" aria-label="Close">
                                     OK
@@ -136,8 +157,9 @@ export default function Starterpack() {
                                 </div>
                                 </div>
                                 </div>
-                            </div>
-                            </div>
+                                </div>
+                                </div>
+                            
 
                     </div>
                 </div>
