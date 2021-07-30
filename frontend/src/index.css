@@ -1466,6 +1466,27 @@ hr {
   font-weight:bold;
 }
 
+.deposit-link-button-div {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.deposit-link-button {
+  text-decoration: none;
+  font-size: .7rem ;
+  font-weight: bold;
+  border-radius: 7px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: .3rem .5rem;
+}
+
+.deposit-link-button:hover {
+  text-decoration: none;
+  color: rgb(250, 191, 31);
+  border: 3px solid rgb(250, 191, 31);
+}
+
 .deposit-text {
   color: #fff;
   font-size: .8rem;

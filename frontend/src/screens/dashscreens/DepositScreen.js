@@ -43,7 +43,7 @@ export default function DepositScreen(props) {
                     <div className='deposit-header'>Deposit</div>
                     <div className='deposit-box'>
                         <div className='deposit-link'>
-                        <Link to='#' className='deposit-link' data-toggle="modal" data-target="#deposit-modal">CoinPayment</Link>
+                        <Link to='#' className='deposit-link'>CoinPayment</Link>
                         </div> 
                         <div className='deposit-text'>
                         Limit: $1 - $50,000
@@ -68,7 +68,10 @@ export default function DepositScreen(props) {
                         <div className='deposit-text'>
                           ${total_deposit || 0}
                         </div>  
-                        </div>                     
+                        </div> 
+                        <div className='deposit-link-button-div'> 
+                        <Link to='#' className='deposit-link-button' data-toggle="modal" data-target="#deposit-modal">Deposit Now</Link>               
+                        </div> 
                     </div>                         
                 </div>
 

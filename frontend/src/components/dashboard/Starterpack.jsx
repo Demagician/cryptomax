@@ -145,7 +145,7 @@ export default function Starterpack() {
                                         <div className='cal-title'>Success!</div>
                                         <div className='cal-result'>
                                            You have successfully started your investment. Congratulations! on your first step to become a 
-                                           successfull investor. You will earn %20 of your investment after after 24hours.
+                                           successfull investor. You will earn %20 of your investment after 24hours.
                                         </div>
                                         </div>
                                     }
