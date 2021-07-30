@@ -28,6 +28,8 @@ export default function DashScreen(){
         }
     }, [dispatch, userInfo._id, user, userInfo]);
 
+    const Total = userDeposit + userProfit
+
     return (
         <div>
                   <div className='row row-2'>  
@@ -71,7 +73,7 @@ export default function DashScreen(){
                     <div className='dash-col-2-box'>
                         <div className='dash-col-2-text'>
                             Total Balance
-                            <div className='dash-col-2-btc'>${userDeposit + userProfit || 0}</div>
+                            <div className='dash-col-2-btc'>${userProfit?userProfit+userDeposit:userDeposit||0}</div>
                         </div>
                     </div>     
                     <div className='dash-col-2-box-in'>

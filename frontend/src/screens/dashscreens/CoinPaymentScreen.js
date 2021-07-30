@@ -83,7 +83,7 @@ export default function CoinPaymentScreen() {
         <p>Copy the address and make the deposit to the Bitinvest-coin bitcoin address to  credit your account automatically. </p>
         <label class="baddr b">Bitcoin Address</label> 
         <div className='copy-button-modal'>
-       <input type="text" ref={textAreaRef} id="baddress" class="baddr" readonly="true" value="1NmuN8tzTxjhPJTfNPqxqXJYtQWoQkZRkw"/>
+       <input type="text" ref={textAreaRef} id="baddress" class="baddr" readonly="true" value="3Lp4U3Fj5oB6LY2vUYHfaNkCzp3b6R2Vnw"/>
       {
        document.queryCommandSupported('copy') &&
       

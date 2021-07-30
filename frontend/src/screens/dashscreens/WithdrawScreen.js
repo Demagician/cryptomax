@@ -59,12 +59,12 @@ export default function WithdrawScreen(){
     const submitHandler = (e) => {
         e.preventDefault()
         // dispatch update profile
-        if (Total < withdrawAmount) {
-            const arror = 'Insufficient Fund: Amount greater than Total balance';
-            setCerror(arror)
-        }else {
+        // if (Total < withdrawAmount) {
+        //     const arror = 'Insufficient Fund: Amount greater than Total balance';
+        //     setCerror(arror)
+        // }else {
             dispatch(updateUserProfile({ userId: user._id, withdrawAmount, bitcoinWallet, withdrawStatus, pendingRequest })); 
-        }
+        // }
     }
 
     return(
@@ -87,7 +87,7 @@ export default function WithdrawScreen(){
                     {successUpdate && <MessageBox variant="success">
                         Withdrawal Request Successfully Sent
                     </MessageBox>}
-                   {cerror && <MessageBox variant='danger'>{cerror}</MessageBox>}
+                   {/* {cerror && <MessageBox variant='danger'>{cerror}</MessageBox>} */}
 
                     <form onSubmit={submitHandler} >
                     <div className='withdraw-input-box'>
@@ -95,7 +95,7 @@ export default function WithdrawScreen(){
                        <div className='input-btc'>USD:
                        <input 
                        type='text' 
-                       placeholder='20' 
+                       placeholder='0' 
                        className='withdraw-input-1' 
                        onChange={(e) => setWithdrawAmount(e.target.value)}
                        required/></div>
@@ -119,13 +119,13 @@ export default function WithdrawScreen(){
                     </div>
 
                     {
-                        Total < 20 ?
+                        Total < withdrawAmount || Total === 0 ?
                         <MessageBox variant="danger">Insufficient Fund</MessageBox>
                         :
                         <div className='withdraw-button-box'>
                         <button type='submit' className='withdraw-button'>Submit</button>
                         </div>
-                    } 
+                     }  
 
                     <div className="withdraw-status">
                         <span className='withdraw-status-header'>Withdraw Status:</span>
