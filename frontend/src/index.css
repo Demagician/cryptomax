@@ -2257,13 +2257,13 @@ border-radius: 4px;
 .alert-info{
   color: #2020a0;
   background: #e0e0ff;
-  width: 20rem;
+  /* width: 20rem; */
 }
 
 .alert-danger{
   color: #a02020;
   background: #ffe0e0e0;
-  width: 20rem;
+  /* width: 20rem; */
   text-align: center;
 }
 
