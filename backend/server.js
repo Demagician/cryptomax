@@ -14,7 +14,7 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
-mongoose.connect("mongodb+srv://bitinvest:4422@cluster0.3uwcg.mongodb.net/bitinvestDB",);
+mongoose.connect("mongodb+srv://cryptomax:1234@cluster0.vr5qa.mongodb.net/coinDB",);
 
 const __dirname = path.resolve();
 

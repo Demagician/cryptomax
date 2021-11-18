@@ -40,7 +40,7 @@ export default function ContactScreen() {
                     <div className='col-lg-4'>
                         <div className='contact-get-intouch-box'>
                             <div className='get-intouch-title'>Email & Phone</div>
-                            <p className='get-intouch-text'>Bitinvest.help00@gmail.com <br/>+1(470)310-1807</p>
+                            <p className='get-intouch-text'>support@cryptomax-coin.co <br/>+27 640689535</p>
                         </div>
                     </div>
                     <div className='col-lg-4'>

@@ -37,7 +37,7 @@ export default function HomeScreen() {
 
     <Help/>
 
-<a href='#header' className='fix-button'></a><span className='fix-dot'></span>
+{/* <a href='#header' className='fix-button'></a><span className='fix-dot'></span> */}
 
       
  {/* 888888888888888888888888888888888888888888888 service 8888888888888888888888888888888888888888888888888888888888888888888888  */}
