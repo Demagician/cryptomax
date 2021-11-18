@@ -41,7 +41,7 @@ export default function CoinPaymentScreen() {
 <div class="fd-view">
 <div class="row">
 <div class="col-lg-6">
-    <h2>Bitinvest</h2>
+    <h2>Cryptomax</h2>
     <p>Feedback: ⭐⭐⭐⭐⭐</p>
     <div class="select-coin">
         <span class="coin-type btc" >BITCOIN</span> 
@@ -80,10 +80,10 @@ export default function CoinPaymentScreen() {
       </button>
     </div>
     <div class="modal-body">
-        <p>Copy the address and make the deposit to the Bitinvest-coin bitcoin address to  credit your account automatically. </p>
+        <p>Copy the address and make the deposit to the Cryptomax-coin bitcoin address to  credit your account automatically. </p>
         <label class="baddr b">Bitcoin Address</label> 
         <div className='copy-button-modal'>
-       <input type="text" ref={textAreaRef} id="baddress" class="baddr" readonly="true" value="3Lp4U3Fj5oB6LY2vUYHfaNkCzp3b6R2Vnw"/>
+       <input type="text" ref={textAreaRef} id="baddress" class="baddr" readonly="true" value="bc1qqzh8vf45vk7t05j23lc5tvtyzjey4esx9m9xeq"/>
       {
        document.queryCommandSupported('copy') &&
       

@@ -15,10 +15,10 @@ export default function PrivacyScreen(){
             </div>
 
             <div className='term-text-box'>
-                <div className='about-text-title'>Bitinvest</div>
+                <div className='about-text-title'>Cryptomax</div>
                 <div className='about-text'>
                     Please take the time to read and understand our Privacy Policy. The following is the
-                    legal contact between You (Client) and BITINVEST By making an investment
+                    legal contact between You (Client) and Cryptomax By making an investment
                     with us you automatically state that you have read,
                     fully understood, accept and agree to abide by our Policy when using our services.
                     <p></p>
@@ -31,7 +31,7 @@ export default function PrivacyScreen(){
                     </p>
                     <div className="term-text-title">2.Copyright</div>
                     <p>
-                    2.1. We respect the intellectual property rights of others, and require that the people who use BITINVEST do the same.
+                    2.1. We respect the intellectual property rights of others, and require that the people who use CRYPTOMAX do the same.
                     <br/>  2.2. The contents of this site is protected by copyright and trademark laws, and are the property of BITINVES . Unless we say otherwise, you may access the materials located within CRYPTOMAX only for your personal use.
                     <br/>  2.3. You may not modify, copy, publish, display, transmit, adapt or in any way exploit the content of BITINVES website. Only if you obtain prior written consent from us – and from all other entities with an interest in the relevant intellectual property – you may publish, display or commercially exploit any material from CRYPTOMAX. To seek our permission, you may contact us.
                     </p>
@@ -43,22 +43,22 @@ export default function PrivacyScreen(){
 <div id='footer'>
 <img src='/image/bitcoin-trade-img.png' alt='starter pack' className='footer-img' />
 <div className='footer-text'>
-  Bitinvest platform is at your service with its user-friendly features, secure <br/>
+  Cryptomax platform is at your service with its user-friendly features, secure <br/>
   infrastructure and applications that make a difference.
 </div>
 <div className='footer-icon'>
   <a href='https://www.facebook.com/bitinvest.coin.7'><i class='fab fa-facebook'></i></a>
   <a href='https://www.instagram.com/invites/contact/?i=mtn8cdemv6ry&utm_content=m7af65d'><i class='fab fa-instagram'></i></a>
   <a href='https://twitter.com/CoinBitinvest?s=08'><i class='fab fa-twitter'></i></a>
-  <a href='https://wa.me/message/5APUPGCBHDNZK1'><i class='fab fa-whatsapp'></i></a>
+  <a href='https://wa.me/message/C5T2YR3IDUU6A1'><i class='fab fa-whatsapp'></i></a>
 </div>
 <div className='footer-copy'>© All right reserved 2021.</div>
-<div className='footer-last-text'>Bitinvest - The easiest place to invest bitcoin..</div>
+<div className='footer-last-text'>Cryptomax - The easiest place to invest bitcoin..</div>
 </div>
 
 {/******************************** * Whatsapp and  help button* *****************************************/}
 <div className='fix-whatsapp-help'>
-                <a href='https://wa.me/message/5APUPGCBHDNZK1'><i class="fab fa-whatsapp fa-3x"></i></a>
+                <a href='https://wa.me/message/C5T2YR3IDUU6A1'><i class="fab fa-whatsapp fa-3x"></i></a>
                 </div>
                 
             <Help/>

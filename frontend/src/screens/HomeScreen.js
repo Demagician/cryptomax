@@ -32,7 +32,7 @@ export default function HomeScreen() {
 
     {/******************************** * Whatsapp and  help button* *****************************************/}
     <div className='fix-whatsapp-help'>
-    <a href='https://wa.me/message/5APUPGCBHDNZK1'><i class="fab fa-whatsapp fa-3x"></i></a>
+    <a href='https://wa.me/message/C5T2YR3IDUU6A1'><i class="fab fa-whatsapp fa-3x"></i></a>
     </div>
 
     <Help/>
@@ -117,9 +117,9 @@ export default function HomeScreen() {
       Focused, Active Management of High-Growth Digital Assets.<span className='letmine-dot'>.</span>
       </div>
       <div className='letmine-3-text'>
-      Bitinvest Global Ltd is a registered investment platform providing digital asset investment management services to 
+      Cryptomax Global Ltd is a registered investment platform providing digital asset investment management services to 
       individuals. We provide a dynamic investment solution to clients in need of a self-operating portfolio, as well as a smart fund with flexible time and investment amount. 
-      Bitinvest Strategy is automated thats why we provide effective investment strategy, especially when you have
+      Cryptomax Strategy is automated thats why we provide effective investment strategy, especially when you have
       high end technology to do all the hard work for you. Our servers are running our Arbitrage Bots that
       are constantly looking for the biggest BTC-USDT price difference between multiple cryptocurrency exchanges.
       </div>
@@ -255,7 +255,7 @@ export default function HomeScreen() {
   <div class="row">
     <div class="col-lg-6">
       <p class="c-text">
-        Bitinvest limited is a registered and licensed company in  England as the LONDON COIN COMPANY limited
+        Cryptomax limited is a registered and licensed company in  England as the LONDON COIN COMPANY limited
         and powered by the latest and most secure form of ssl data encryption to keep all your data and information safe and secure.
       </p>
       <p>
@@ -368,14 +368,14 @@ export default function HomeScreen() {
     <div class="" id="headingOne">
       <h2 class="">
         <button class="question-button" type='button'  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <i class="fas fa-plus-circle fa-2x"></i>What is Bitinvest?
+        <i class="fas fa-plus-circle fa-2x"></i>What is Cryptomax?
         </button>
       </h2>
     </div>
 
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="question-drop-text">
-      Bitinvest is a registered digital asset investment firm based in the UK. 
+      Cryptomax is a registered digital asset investment firm based in the UK. 
       The platform, which includes advanced basic and technical analysis
        at the source of high return performance, offers high & fixed interest
         return. Aiming for success with its international investor network,
@@ -476,7 +476,7 @@ export default function HomeScreen() {
 <div id='diversify'>
   <div className='diversify-header'>Diversify your investment porfolio <span className='dot-1'>.</span></div>
   <div className='diversify-text'>
-  Bitinvest is fully legit and officially registered company whose activities are regulated by the financial control authorities under the jurisdiction of the United Kingdom. Accepting our terms of coorperation, you can be absolutely sure of getting a guaranteed profit and full return on your investment.
+  Cryptomax is fully legit and officially registered company whose activities are regulated by the financial control authorities under the jurisdiction of the United Kingdom. Accepting our terms of coorperation, you can be absolutely sure of getting a guaranteed profit and full return on your investment.
   </div>
   <div className='diversify-box'>
   <div className='row'>
@@ -533,7 +533,7 @@ export default function HomeScreen() {
     <div className='col-lg-4'>
       <div className='feedback-box'>
         <div className='feedback-text'>
-        I have been using BITINVEST for well over a year. Bitinvest has created an intuitive and easy method
+        I have been using Cryptomax for well over a year. Cryptomax has created an intuitive and easy method
             of deversifying my personal savings. This the best investment company i have ever come across.
         </div>
         <div className='row'>
@@ -584,17 +584,17 @@ export default function HomeScreen() {
 <div id='footer'>
 <img src='/image/bitcoin-trade-img.png' alt='starter pack' className='footer-img' />
 <div className='footer-text'>
-  Bitinvest platform is at your service with its user-friendly features, secure <br/>
+  Cryptomax platform is at your service with its user-friendly features, secure <br/>
   infrastructure and applications that make a difference.
 </div>
 <div className='footer-icon'>
   <a href='https://www.facebook.com/bitinvest.coin.7'><i class='fab fa-facebook'></i></a>
   <a href='https://www.instagram.com/invites/contact/?i=mtn8cdemv6ry&utm_content=m7af65d'><i class='fab fa-instagram'></i></a>
   <a href='https://twitter.com/CoinBitinvest?s=08'><i class='fab fa-twitter'></i></a>
-  <a href='https://wa.me/message/5APUPGCBHDNZK1'><i class='fab fa-whatsapp'></i></a>
+  <a href='https://wa.me/message/C5T2YR3IDUU6A1'><i class='fab fa-whatsapp'></i></a>
 </div>
 <div className='footer-copy'>© All right reserved 2021.</div>
-<div className='footer-last-text'>Bitinvest - The easiest place to invest bitcoin..</div>
+<div className='footer-last-text'>Cryptomax - The easiest place to invest bitcoin..</div>
 </div>
 
 

@@ -72,7 +72,7 @@ export default function LoginScreen(props){
                     </div>
                     <div className='register-footer-box'>
                         <div className='register-footer'>
-                            <Link to='/'className='register-footer-1-link'>Bitinvest</Link> © 2021. All Rights Reserved.
+                            <Link to='/'className='register-footer-1-link'>Cryptomax</Link> © 2021. All Rights Reserved.
                         </div>
                         <div className='register-footer-link-box'>
                             <Link to='/policy'className='register-footer-link'>AML policy</Link>

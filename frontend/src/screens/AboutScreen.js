@@ -10,16 +10,16 @@ export default function AboutScreen() {
               </div>
             </div>
             <div className='about-text-box'>
-                <div className='about-text-title'>Bitinvest</div>
+                <div className='about-text-title'>CRYPTOMAX</div>
                 <div className='about-text'>
-                    Bitinvest is a leading blockchain technology facilitator, 
+                    Cryptomax is a leading blockchain technology facilitator, 
                     provides safe, stable, reliable and global one-stop service,
                     With daily profits with collective investments in the most promising startups.
-                    Bitinvest offers you the fastest and the most legit way
+                    Cryptomax offers you the fastest and the most legit way
                     to successfully accumulate your BTC by getting you 10% , 15%, 25%, 30% profit every 9 hours.
                     Our main goal is to provide our clients with a balanced and risk-protected investment portfolio
                     consisting of innovative and progressive companies with a high level of reliability.
-                    Bitinvest Strategy is automated thats why we provide effective investment strategy, especially when you have
+                    Cryptomax Strategy is automated thats why we provide effective investment strategy, especially when you have
                     high end technology to do all the hard work for you. Our servers are running our Arbitrage Bots that
                     <p></p>
                     are constantly looking for the biggest BTC-USDT price difference between multiple cryptocurrency exchanges.
@@ -66,7 +66,7 @@ export default function AboutScreen() {
     <div className='col-lg-4'>
       <div className='feedback-box'>
         <div className='feedback-text'>
-        I have been using BITINVEST for well over a year. Bitinvest has created an intuitive and easy method
+        I have been using CRYPTOMAX for well over a year. Cryptomax has created an intuitive and easy method
             of deversifying my personal savings. This the best investment company i have ever come across.
         </div>
         <div className='row'>
@@ -117,23 +117,23 @@ export default function AboutScreen() {
 <div id='footer'>
 <img src='/image/bitcoin-trade-img.png' alt='starter pack' className='footer-img' />
 <div className='footer-text'>
-  Bitinvest platform is at your service with its user-friendly features, secure <br/>
+  Cryptomax platform is at your service with its user-friendly features, secure <br/>
   infrastructure and applications that make a difference.
 </div>
 <div className='footer-icon'>
   <a href='https://www.facebook.com/bitinvest.coin.7'><i class='fab fa-facebook'></i></a>
   <a href='https://www.instagram.com/invites/contact/?i=mtn8cdemv6ry&utm_content=m7af65d'><i class='fab fa-instagram'></i></a>
   <a href='https://twitter.com/CoinBitinvest?s=08'><i class='fab fa-twitter'></i></a>
-  <a href='https://wa.me/message/5APUPGCBHDNZK1'><i class='fab fa-whatsapp'></i></a>
+  <a href='https://wa.me/message/C5T2YR3IDUU6A1'><i class='fab fa-whatsapp'></i></a>
 </div>
 <div className='footer-copy'>© All right reserved 2021.</div>
-<div className='footer-last-text'>Bitinvest - The easiest place to invest bitcoin..</div>
+<div className='footer-last-text'>Cryptomax - The easiest place to invest bitcoin..</div>
 </div>
 
 
     {/******************************** * Whatsapp and  help button* *****************************************/}
     <div className='fix-whatsapp-help'>
-    <a href='https://wa.me/message/5APUPGCBHDNZK1'><i class="fab fa-whatsapp fa-3x"></i></a>
+    <a href='https://wa.me/message/C5T2YR3IDUU6A1'><i class="fab fa-whatsapp fa-3x"></i></a>
     </div>
    
 <Help/>
