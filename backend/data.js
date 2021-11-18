@@ -3,7 +3,7 @@ import bcrypt from 'bcryptjs';
 const data = {
     users: [
         {  
-            name: 'darlington',
+            name: 'darlington uzoefuna',
             username: 'admin',
             email: 'admin@gmail.com',
             mobile: '+199999999',
