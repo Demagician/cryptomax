@@ -11,6 +11,8 @@ import RegisterScreen from './screens/RegisterScreen';
 import SponsoringScreen from './screens/SponsoringScreen';
 import TermsScreen from './screens/TermsScreen';
 import ComingSoon from './screens/ComingSoonScreen';
+import PrivateRoute from './components/PrivateRoute';
+import DashScreen from './screens/dashscreens/DashScreen';
 
 function App(props) {
 
@@ -87,6 +89,7 @@ function App(props) {
       <main>
 
         <Route path='/' component={HomeScreen} exact></Route>
+        <Route path='/:userName' component={HomeScreen} exact></Route>
         <Route path='/register' component={RegisterScreen}></Route>
         <Route path='/login' component={LoginScreen}></Route>
         <Route path='/about' component={AboutScreen}></Route>
