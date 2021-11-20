@@ -89,7 +89,7 @@ function App(props) {
       <main>
 
         <Route path='/' component={HomeScreen} exact></Route>
-        <Route path='/:userName' component={HomeScreen} exact></Route>
+        <Route path='/?ref/:userName' component={HomeScreen} exact></Route>
         <Route path='/register' component={RegisterScreen}></Route>
         <Route path='/login' component={LoginScreen}></Route>
         <Route path='/about' component={AboutScreen}></Route>

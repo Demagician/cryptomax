@@ -27,7 +27,7 @@ export default function ReferralScreen(props) {
                 <div className='referral-box'>
                 <div className='referral-log' style={{overflow: 'auto'}} >
                 <div className='deposit-log-header'>Referrals</div>
-                <input type="text" ref={textAreaRef} id="baddress" class="baddr" readonly="true" value={`https://cryptomax-coin.co/${userInfo.username}`}/>
+                <input type="text" ref={textAreaRef} id="baddress" class="baddr" readonly="true" value={`https://cryptomax-coin.co/?ref/${userInfo.username}`}/>
                     {
                     document.queryCommandSupported('copy') &&
                     
