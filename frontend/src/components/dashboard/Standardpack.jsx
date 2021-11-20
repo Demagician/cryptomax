@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-export default function Premiumpack() {
+export default function Standardpack() {
 
-    const userSignin = useSelector(state => state.userSignin)
-    const { userInfo } = userSignin
+    const userSignin = useSelector((state) => state.userSignin);
+    const { userInfo } = userSignin;
 
-    const [btcp, setBtcp] = useState();
-    const [resultp, setResultp] = useState();
+    const [btcs, setBtcs] = useState();
+    const [results, setResults] = useState();
 
-    function handleChangep(event) {
+    function handleChanges(event) {
         console.log(event.target.value);
-        setBtcp(event.target.value);
+        setBtcs(event.target.value);
     }
 
-    function handleClickp() {
-        setResultp(btcp/100 * 200);
+    function handleClicks() {
+        setResults(btcs/100 * 135);
     }
 
     return (
@@ -23,23 +23,23 @@ export default function Premiumpack() {
                     <div className='col-lg-4'>
                     <div className='invest-all-box'>
                         <div className='invest-box'>
-                           MULTI PACK
-                            <div className='invest-box-btc'>$1,500</div> 
-                            <div className='invest-box-text-1'>For 48 Hours(s)</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>50% weekly top up</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 100%</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>$4,999 max investment</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 200%</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>5% referral percent</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>8% profit bonus</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 1500</div>
+                           STANDARD PACK
+                            <div className='invest-box-btc'>$200</div> 
+                            <div className='invest-box-text-1'>AFTER 48 Hour(s)</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>35% top up</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 35%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>$499 max investment</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 50%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>10% referral percent</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>15% profit bonus</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 200</div>
                             <div className='invest-box-link-button'>
-                            <button type='button' className='invest-box-button' data-toggle="modal" data-target="#pexampleModal" data-whatever="@mdo">Calculate profit</button>
-                            <button type='button' className='invest-box-link' data-toggle='modal' data-target="#ppurchasemodal-2" data-whatever='@mdo'>Purchase plan</button>  
+                            <button type='button' className='invest-box-button' data-toggle="modal" data-target="#stexampleModal" data-whatever="@mdo">Calculate profit</button>
+                            <button type='button' className='invest-box-link' data-toggle='modal' data-target="#stpurchasemodal-2" data-whatever='@mdo'>Purchase plan</button>  
                             </div> 
                             </div>
 
-                            <div class="modal fade" id="pexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="stexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content modal-sm center">
                                 <div class="calculat-modal-bg">
@@ -49,38 +49,38 @@ export default function Premiumpack() {
                                     </button> */}
                                 
                                 <div class="modal-body">
-                                    <div className='modal-pack'>MULTI PACK</div>
+                                    <div className='modal-pack'>STANDARD PACK</div>
                                     <div class="form-group">
                                     <span className='calculate-input-btc'>USD<input type='tel' className='calculate-input' 
-                                    onChange={handleChangep}
-                                    value={btcp} 
+                                    onChange={handleChanges}
+                                    value={btcs} 
                                     /></span>
                                     </div>
                                
                                 </div>
                                 <div class="">
-                                    <button type="button" onClick={handleClickp} class="cal-button-2" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#pexampleModal-2" data-whatever="@mdo">Calculate</button>
+                                    <button type="button" onClick={handleClicks} class="cal-button-2" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#stexampleModal-2" data-whatever="@mdo">Calculate</button>
                                 </div>
                                 </div>
                                 </div>
                             </div>
                             </div>
 
-                            <div class="modal fade" id="pexampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel-2" aria-hidden="true">
+                            <div class="modal fade" id="stexampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel-2" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content modal-sm center">
                                 <div class="calculat-modal-bg">          
                                 <div class="modal-body">
                                 
                                 {
-                                    btcp < 1500 ? 
+                                    btcs < 200 ? 
                                     <div>
                                    <span className='non-i'> <i class="fas fa-exclamation"></i></span>
                                     <div className='cal-title'>Sorry!</div>
                                     <div className='non-result'>value is less than minimum deposit</div> 
                                     </div>  
                                     : 
-                                     btcp >= 4999 ?
+                                     btcs >= 499 ?
                                       <div>
                                     <span className='non-i'> <i class="fas fa-exclamation"></i></span>
                                     <div className='cal-title'>Sorry!</div>
@@ -90,7 +90,7 @@ export default function Premiumpack() {
                                     <div>
                                     <span className='result-icon'><i class="far fa-check-circle"></i></span>
                                     <div className='cal-title'>Success!</div>
-                                    <div className='cal-result'>{resultp}USD</div>
+                                    <div className='cal-result'>{results}USD</div>
                                     </div>
                                     
                                 }
@@ -105,34 +105,35 @@ export default function Premiumpack() {
                             </div>
                             </div>
 
-                            {/* <div class="modal fade" id="ppurchasemodal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+                            {/* <div class="modal fade" id="spurchasemodal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content modal-sm center">
                                 <div class="calculat-modal-bg">
                                     <div class="modal-title" id="purchaseModalLabel">Purchase plan</div>
                                 
                                 <div class="modal-body">
-                                    <div className='modal-pack'>PREMIUM PACK</div>
+                                    <div className='modal-pack'>STARTER PACK</div>
                                     <div class="form-group">
                                     <span className='calculate-input-btc'>USD<input type='text' className='calculate-input' required/></span>
                                     </div>
                                
                                 </div>
                                 <div class="">
-                                    <button type="button" class="cal-button-2" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#ppurchasemodal-2" data-whatever="@mdo">Purchase</button>
+                                    <button type="button" class="cal-button-2" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#spurchasemodal-2" data-whatever="@mdo">Purchase</button>
                                 </div>
                                 </div>
                                 </div>
                             </div>
                             </div> */}
 
-                            <div class="modal fade" id="ppurchasemodal-2" tabindex="-1" aria-labelledby="purchaseModalLabel-2" aria-hidden="true">
-                            <div class="modal-dialog">
+        
+                                <div class="modal fade" id="stpurchasemodal-2" tabindex="-1" aria-labelledby="purchaseModalLabel-2" aria-hidden="true">
+                                <div class="modal-dialog">
                                 <div class="modal-content modal-sm center">
                                 <div class="calculat-modal-bg">          
                                 <div class="modal-body-2">
-                                {
-                                        userInfo.userDeposit < 1000
+                                    {
+                                        userInfo.userDeposit < 200 
                                         ?
                                         <div>
                                         <i class="fas fa-exclamation"></i>
@@ -144,10 +145,11 @@ export default function Premiumpack() {
                                         <div className='cal-title'>Success!</div>
                                         <div className='cal-result'>
                                            You have successfully started your investment. Congratulations! on your first step to become a 
-                                           successfull investor. You will earn %50 of your investment after 7 working days.
+                                           successfull investor. You will earn %35 of your investment after 24hours.
                                         </div>
                                         </div>
                                     }
+                                    
                                    
                                     <button type="button" class="close-button" data-dismiss="modal" aria-label="Close">
                                     OK
@@ -155,8 +157,9 @@ export default function Premiumpack() {
                                 </div>
                                 </div>
                                 </div>
-                            </div>
-                            </div>
+                                </div>
+                                </div>
+                            
 
                     </div>
                 </div>

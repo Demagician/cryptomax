@@ -16,7 +16,7 @@ export default function Goldpack() {
     }
 
     function handleClick() {
-        setResult(btc * 2);
+        setResult(btc * 3);
         
     }
 
@@ -26,13 +26,13 @@ export default function Goldpack() {
                     <Username/>
                     <div className='invest-all-box'>
                         <div className='invest-box'>
-                           GOLD PACK
+                           VIP PACK
                             <div className='invest-box-btc'>$5,000</div> 
-                            <div className='invest-box-text-1'>For 1 Hour(s)</div>
+                            <div className='invest-box-text-1'>For 72 Hour(s)</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>3.5% hourly top up</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 100%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 200%</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>max-investment: ULTD</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 200%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 300%</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>10% referral percent</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>15% profit bonus</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 5000</div>
@@ -52,7 +52,7 @@ export default function Goldpack() {
                                     </button> */}
                                 
                                 <div class="modal-body">
-                                    <div className='modal-pack'>GOLD PACK</div>
+                                    <div className='modal-pack'>VIP PACK</div>
                                     <div class="form-group">
                                     <span className='calculate-input-btc'>USD<input type='tel' className='calculate-input' 
                                     onChange={handleChange}
@@ -139,7 +139,7 @@ export default function Goldpack() {
                                         <div className='cal-title'>Success!</div>
                                         <div className='cal-result'>
                                            You have successfully started your investment. Congratulations! on your first step to become a 
-                                           successfull investor. You will earn %100 of your investment after 24 hours.
+                                           successfull investor. You will earn %200 of your investment after 72 hours.
                                         </div>
                                         </div>
                                     }

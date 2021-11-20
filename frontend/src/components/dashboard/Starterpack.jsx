@@ -15,7 +15,7 @@ export default function Starterpack() {
     }
 
     function handleClickp() {
-        setResultp(btcp/100 * 120);
+        setResultp(btcp/100 * 125);
     }
 
     return (
@@ -23,16 +23,16 @@ export default function Starterpack() {
                     <div className='col-lg-4'>
                     <div className='invest-all-box'>
                         <div className='invest-box'>
-                           STARTER PACK
-                            <div className='invest-box-btc'>$50</div> 
-                            <div className='invest-box-text-1'>For 24 Hour(s)</div>
+                           ARMATURE PACK
+                            <div className='invest-box-btc'>$20</div> 
+                            <div className='invest-box-text-1'>AFTER 24 Hour(s)</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>20% daily top up</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 60%</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>$999 max investment</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 120%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>interest 20%</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>$199 max investment</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>compound interest 30%</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>2% referral percent</div>
                             <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>5% profit bonus</div>
-                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 50</div>
+                            <div className='invest-box-text'><span className='invest-icon'><i class="fas fa-check-circle"></i></span>USD: 20</div>
                             <div className='invest-box-link-button'>
                             <button type='button' className='invest-box-button' data-toggle="modal" data-target="#sexampleModal" data-whatever="@mdo">Calculate profit</button>
                             <button type='button' className='invest-box-link' data-toggle='modal' data-target="#spurchasemodal-2" data-whatever='@mdo'>Purchase plan</button>  
@@ -49,7 +49,7 @@ export default function Starterpack() {
                                     </button> */}
                                 
                                 <div class="modal-body">
-                                    <div className='modal-pack'>STARTER PACK</div>
+                                    <div className='modal-pack'>ARMATURE PACK</div>
                                     <div class="form-group">
                                     <span className='calculate-input-btc'>USD<input type='tel' className='calculate-input' 
                                     onChange={handleChangep}
@@ -73,14 +73,14 @@ export default function Starterpack() {
                                 <div class="modal-body">
                                 
                                 {
-                                    btcp < 50 ? 
+                                    btcp < 20 ? 
                                     <div>
                                    <span className='non-i'> <i class="fas fa-exclamation"></i></span>
                                     <div className='cal-title'>Sorry!</div>
                                     <div className='non-result'>value is less than minimum deposit</div> 
                                     </div>  
                                     : 
-                                     btcp >= 999 ?
+                                     btcp >= 199 ?
                                       <div>
                                     <span className='non-i'> <i class="fas fa-exclamation"></i></span>
                                     <div className='cal-title'>Sorry!</div>
@@ -133,7 +133,7 @@ export default function Starterpack() {
                                 <div class="calculat-modal-bg">          
                                 <div class="modal-body-2">
                                     {
-                                        userInfo.userDeposit < 50 
+                                        userInfo.userDeposit < 20 
                                         ?
                                         <div>
                                         <i class="fas fa-exclamation"></i>
@@ -145,7 +145,7 @@ export default function Starterpack() {
                                         <div className='cal-title'>Success!</div>
                                         <div className='cal-result'>
                                            You have successfully started your investment. Congratulations! on your first step to become a 
-                                           successfull investor. You will earn %20 of your investment after 24hours.
+                                           successfull investor. You will earn %25 of your investment after 24hours.
                                         </div>
                                         </div>
                                     }

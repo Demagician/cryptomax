@@ -290,35 +290,73 @@ export default function HomeScreen() {
     <div className='col-lg-4 col-md-6'>
       <div className='investment-box'>
         <img src='/image/bitcoin-trade-img.png' alt='starter pack' className='investment-img' />
-        <h3 className='investplan-name'>STARTER PACK</h3>
+        <h3 className='investplan-name'>ARMATURE PACK</h3>
         <div className='investment-price'>
           <div className='investment-text'>Price:</div>
-          <div className='investment-price-btc'>$50</div>
+          <div className='investment-price-btc'>$20</div>
         </div>
         <div className='investment-text'>Duration:</div>
-        <div className='investment-duration'>FOR 24hours</div>
+        <div className='investment-duration'>AFTER 24hours</div>
         <hr/>
         <div className='investment-text'>Earn:</div>
-        <div className='investment-duration'>20% DAILY</div>
+        <div className='investment-duration'>25% DAILY</div>
         <hr/>
         <div className='investment-text'>USD:</div>
-        <div className='investment-duration'>50$</div>
+        <div className='investment-duration'>20$</div>
         <hr/>
       </div>
     </div>
     <div className='col-lg-4 col-md-6'>
       <div className='investment-box'>
         <img src='/image/bitcoin-trade-img.png' alt='starter pack' className='investment-img' />
-        <h3 className='investplan-name'>PREMIUM PACK</h3>
+        <h3 className='investplan-name'>STANDARD PACK</h3>
         <div className='investment-price'>
           <div className='investment-text'>Price:</div>
-          <div className='investment-price-btc'>$1,000</div>
+          <div className='investment-price-btc'>$200</div>
         </div>
         <div className='investment-text'>Duration:</div>
-        <div className='investment-duration'>FOR 48 Hour(s)</div>
+        <div className='investment-duration'>AFTER 48hours</div>
         <hr/>
         <div className='investment-text'>Earn:</div>
-        <div className='investment-duration'>50% Hourly</div>
+        <div className='investment-duration'>35% DAILY</div>
+        <hr/>
+        <div className='investment-text'>USD:</div>
+        <div className='investment-duration'>200$</div>
+        <hr/>
+      </div>
+    </div>
+    <div className='col-lg-4 col-md-6'>
+      <div className='investment-box'>
+        <img src='/image/bitcoin-trade-img.png' alt='starter pack' className='investment-img' />
+        <h3 className='investplan-name'>PROFESSIONAL PACK</h3>
+        <div className='investment-price'>
+          <div className='investment-text'>Price:</div>
+          <div className='investment-price-btc'>$500</div>
+        </div>
+        <div className='investment-text'>Duration:</div>
+        <div className='investment-duration'>AFTER 24hours</div>
+        <hr/>
+        <div className='investment-text'>Earn:</div>
+        <div className='investment-duration'>50% DAILY</div>
+        <hr/>
+        <div className='investment-text'>USD:</div>
+        <div className='investment-duration'>500$</div>
+        <hr/>
+      </div>
+    </div>
+    <div className='col-lg-4 col-md-6'>
+      <div className='investment-box'>
+        <img src='/image/bitcoin-trade-img.png' alt='starter pack' className='investment-img' />
+        <h3 className='investplan-name'>ULTRA PACK</h3>
+        <div className='investment-price'>
+          <div className='investment-text'>Price:</div>
+          <div className='investment-price-btc'>$1000</div>
+        </div>
+        <div className='investment-text'>Duration:</div>
+        <div className='investment-duration'>AFTER 48hours</div>
+        <hr/>
+        <div className='investment-text'>Earn:</div>
+        <div className='investment-duration'>70% DAILY</div>
         <hr/>
         <div className='investment-text'>USD:</div>
         <div className='investment-duration'>1000$</div>
@@ -328,16 +366,35 @@ export default function HomeScreen() {
     <div className='col-lg-4 col-md-6'>
       <div className='investment-box'>
         <img src='/image/bitcoin-trade-img.png' alt='starter pack' className='investment-img' />
-        <h3 className='investplan-name'>GOLD PACK</h3>
+        <h3 className='investplan-name'>MULTI PACK</h3>
+        <div className='investment-price'>
+          <div className='investment-text'>Price:</div>
+          <div className='investment-price-btc'>$1,500</div>
+        </div>
+        <div className='investment-text'>Duration:</div>
+        <div className='investment-duration'>AFTER 48 Hour(s)</div>
+        <hr/>
+        <div className='investment-text'>Earn:</div>
+        <div className='investment-duration'>100% Hourly</div>
+        <hr/>
+        <div className='investment-text'>USD:</div>
+        <div className='investment-duration'>1500$</div>
+        <hr/>
+      </div>
+    </div>
+    <div className='col-lg-4 col-md-6'>
+      <div className='investment-box'>
+        <img src='/image/bitcoin-trade-img.png' alt='starter pack' className='investment-img' />
+        <h3 className='investplan-name'>VIP PACK</h3>
         <div className='investment-price'>
           <div className='investment-text'>Price:</div>
           <div className='investment-price-btc'>$5,000</div>
         </div>
         <div className='investment-text'>Duration:</div>
-        <div className='investment-duration'>HOURLY</div>
+        <div className='investment-duration'>AFTER 72 Hours</div>
         <hr/>
         <div className='investment-text'>Earn:</div>
-        <div className='investment-duration'>100% hourly</div>
+        <div className='investment-duration'>200% hourly</div>
         <hr/>
         <div className='investment-text'>USD:</div>
         <div className='investment-duration'>5000$</div>
