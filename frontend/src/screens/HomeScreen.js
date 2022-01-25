@@ -35,7 +35,7 @@ export default function HomeScreen() {
     <a href='https://wa.me/message/C5T2YR3IDUU6A1'><i class="fab fa-whatsapp fa-3x"></i></a>
     </div>
 
-    <Help/>
+  
 
 {/* <a href='#header' className='fix-button'></a><span className='fix-dot'></span> */}
 

@@ -148,7 +148,7 @@ export default function WithdrawScreen(){
             </div>
             </div>
             <Log/>
-            <Help/>
+            
         
         </div>
     )

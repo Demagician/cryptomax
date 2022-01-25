@@ -200,7 +200,7 @@ export default function ProfileScreen(){
                        </div>
                    </div>        
                 </div>
-                <Help/>
+               
         </div>
     )
 }

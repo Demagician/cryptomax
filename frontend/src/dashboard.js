@@ -16,6 +16,12 @@ import SupportScreen from './screens/dashscreens/SupportScreen';
 import UserListScreen from './screens/dashscreens/UserListScreen';
 import WithdrawScreen from './screens/dashscreens/WithdrawScreen';
 import UserEditScreen from './screens/dashscreens/UserEditScreen';
+import AdminDashboardScreen from './screens/dashscreens/AdminDashboardScreen';
+import OrderListScreen from './screens/OrderListScreen';
+import OrderHistoryScreen from './screens/OrderHistoryScreen';
+import AdminSupportScreen from './screens/dashscreens/AdminSupportScreen';
+import ChatBox from './components/dashboard/ChatBox';
+// import AdminScreen from './screens/dashscreens/AdminScreen';
 
 export default function Dashboard(props){
     const dispatch = useDispatch();
@@ -50,14 +56,15 @@ export default function Dashboard(props){
                                         </Link>
                                         <ul className="admin-dropdown-content">
                                             <li>
-                                                <Link to="/dashboard" class="admin-dropdown-item">Dashboard</Link>
+                                                <Link to="/user/admin-dashboard" class="admin-dropdown-item">Admin-Dashboard</Link>
                                             </li>
                                             <li>
-                                                <Link to="/userlist" class="admin-dropdown-item">Users</Link>
+                                                <Link to="/admin-userlist" class="admin-dropdown-item">Users</Link>
                                             </li>
                                             <li>
-                                                <Link to="/feedbacklist" class="admin-dropdown-item">Feedbacks</Link>
+                                                <Link to="/admin/support" class="admin-dropdown-item">Support</Link>
                                             </li>
+                                            
                                         </ul>
                                    </div>
                                )}
@@ -96,6 +103,7 @@ export default function Dashboard(props){
                                <a href='/login' onClick={logoutHandler} className='dash-1-col-link'><i class="fas fa-power-off"></i><span className='dash-remove'>Logout</span></a>
                                </div>
                            </div>
+                           {/* <ChatBox></ChatBox> */}
                            <div>
                                <PrivateRoute path='/user/dashboard' component={DashScreen}></PrivateRoute>
                                <PrivateRoute path='/user/fund' component={DepositScreen}></PrivateRoute>
@@ -107,9 +115,15 @@ export default function Dashboard(props){
                                <PrivateRoute path='/user/password' component={SecurityScreen}></PrivateRoute>
                                <PrivateRoute path='/user/referral' component={ReferralScreen}></PrivateRoute>
                                <PrivateRoute path='/coinpayment' component={CoinPaymentScreen}></PrivateRoute>
-                               <AdminRoute path='/userlist' component={UserListScreen}></AdminRoute>
+                               <AdminRoute path='/user/admin-dashboard' component={AdminDashboardScreen}></AdminRoute>
+                               <AdminRoute path='/admin-userlist' component={UserListScreen}></AdminRoute>
                                <AdminRoute path='/user/:id/edit' component={UserEditScreen}></AdminRoute>
-                           </div>
+                               <AdminRoute path="/orderlist"component={OrderListScreen}></AdminRoute>
+                                <AdminRoute path='/admin/support' component={AdminSupportScreen}></AdminRoute>
+                                {/* <AdminRoute path='/admin' component={AdminScreen}></AdminRoute> */}
+                                 <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
+                          </div>
+                          {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo}/>}
             </div>
         </div>
         </BrowserRouter>

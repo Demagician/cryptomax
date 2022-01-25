@@ -151,7 +151,7 @@ export default function SecurityScreen() {
                         </div> 
             </div>
             </div>
-            <Help/>
+         
         </div>
     )
 }

@@ -105,7 +105,7 @@ export default function DepositScreen(props) {
             
 
             <Log/>
-            <Help/>
+            
                
         </div>
     )

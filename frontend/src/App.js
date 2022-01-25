@@ -11,12 +11,19 @@ import RegisterScreen from './screens/RegisterScreen';
 import SponsoringScreen from './screens/SponsoringScreen';
 import TermsScreen from './screens/TermsScreen';
 import ComingSoon from './screens/ComingSoonScreen';
+import ChatBox from './components/dashboard/ChatBox';
+import { useSelector } from 'react-redux';
+import ForgetPasswordScreen from './screens/ForgetPasswordScreen';
 
 function App(props) {
 
 //   const loginHandler = ()=>{
 //     props.history.push('/login?redirect=shipping');
 // };
+
+const userSignin = useSelector((state) => state.userSignin);
+const { userInfo } = userSignin;
+
 
   return (
     <BrowserRouter>
@@ -89,6 +96,7 @@ function App(props) {
         <Route path='/' component={HomeScreen} exact></Route>
         <Route path='/register' component={RegisterScreen}></Route>
         <Route path='/login' component={LoginScreen}></Route>
+        <Route path='/forgetpassword' component={ForgetPasswordScreen}></Route>
         <Route path='/about' component={AboutScreen}></Route>
         <Route path='/contact' component={ContactScreen}></Route>
         <Route path='/faq' component={FaqScreen}></Route>
@@ -100,7 +108,7 @@ function App(props) {
         
       </main>
 
-
+      {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo}/>}
     </div>
     </BrowserRouter>
   );

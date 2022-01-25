@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
-// "$2a$08$gtE.BZQ0hw49Ud7FCywVO.l8eP/20AokdfzWZ/sD272c7OlBJCQBW"
-//    "$2a$08$gtE.BZQ0hw49Ud7FCywVO.l8eP/20AokdfzWZ/sD272c7OlBJCQBW"
+
 const userSchema = new mongoose.Schema({
     name: {type: String, required: true},
     username: {type: String, required: true},
@@ -13,10 +12,10 @@ const userSchema = new mongoose.Schema({
     userDeposit: {type: Number, required: false},
     userProfit: {type: Number, required: false},
     withdrawAmount: {type: Number, required: false},
-    // withdrawFrom: {type: String, required: false},
+    paidAmount: {type: Number, required: false},
     bitcoinWallet: {type: String, required: false},
     withdrawStatus: {type: String, required: false},
-    pendingRequest: {type: String, required: false},
+    pendingRequest: {type: Number, required: false},
     password: {type: String, required: true},
     isAdmin: {type: Boolean, default: false, required: false},
 }, {

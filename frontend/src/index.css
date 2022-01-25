@@ -883,6 +883,26 @@ hr {
   margin-bottom: 5.5rem;
 }
 
+/***************************************** Forget password design ********************************************/
+
+.forget-password-form {
+  padding: 2rem 0 ;
+  text-align: center;
+}
+
+.forget-password-input {
+  margin-top: 8rem;
+  padding: .5rem .3rem;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.forget-password-button {
+   margin: 2rem 0;
+}
+
 
 
 /************************************ About page ****************************************/
@@ -1131,7 +1151,53 @@ hr {
   padding-bottom: .6rem;
 }
 
-/* user list page design 88888888 */
+/* ********************************************** Admin Dashboard 888888888888 */
+
+.admin-container {
+  padding: 3rem 0 0 4rem; 
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+.loading-custom-design-for-admin-dashboard {
+  padding-left: 4rem;
+}
+
+.summary-header {
+  font-weight: bold;
+  font-family: 'Montserrat' sans-serif;
+  font-size: 1.5rem;
+}
+
+.col-lg-3 > li {
+  border: 0.1rem #c0c0c0 solid;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  list-style-type: none;
+}
+.summary-title {
+  font-size: .8rem;
+  padding: 1rem;
+}
+.summary-body {
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.summary-title.color1 {
+  background-color: #f0e0e0;
+}
+.summary-title.color2 {
+  background-color: #e0f0e0;
+}
+.summary-title.color3 {
+  background-color: #e0e0f0;
+}
+
+/* user list page design 88888888  admin*/
 
 .user-list-row {
   padding: 3rem 0 0 5rem;
@@ -1222,7 +1288,7 @@ hr {
   font-weight: bold;
 }
 
-/* user edit withdraw request  */
+/* user edit withdraw request admin */
 
 .user-withdraw-header {
   padding: 1rem;
@@ -1248,7 +1314,122 @@ hr {
   margin-left: 1rem;
 }
 
-/* edit user withdraw request */
+/* *************** CHat Box ******************** admin and user */
+
+.rowc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbox {
+  color: #000000;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+}
+.chatbox ul {
+  overflow: scroll;
+  max-height: 20rem;
+}
+.chatbox li {
+  margin-bottom: 1rem;
+}
+.chatbox input {
+  width: calc(100% - 9rem);
+}
+
+.support-users {
+  background: #f0f0f0;
+  height: 100%;
+  margin-top: 1.6rem;
+
+}
+.support-users li {
+  background-color: #f8f8f8;
+}
+.support-users button {
+  background-color: transparent;
+  border: none;
+}
+.support-users li {
+  margin: 1rem;
+  background-color: #f0f0f0;
+  border-bottom: 0.1rem #c0c0c0 solid;
+}
+
+.support-users li:hover {
+  background-color: #f0f0f0;
+}
+.support-users li.selected {
+  background-color: #c0c0c0;
+}
+.support-messages {
+  padding: 1.6rem 0 0 2rem;
+}
+.support-messages input {
+  width: calc(100% - 9rem);
+}
+.support-messages ul {
+  height: calc(100vh - 18rem);
+  max-height: calc(100vh - 18rem);
+  overflow: scroll;
+}
+.support-messages li {
+  margin-bottom: 1rem;
+}
+
+.support-users span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  /* margin-left: 380px; */
+  margin-top: 10px;
+}
+.support-users .offline {
+  background-color: #808080;
+}
+.support-users .online {
+  background-color: #20a020;
+}
+.support-users .unread {
+  background-color: #f02020;
+}
+
+/** admin Screen design page ******************* */
+
+/* .dash-2-col {
+  background-color:rgb(33, 37, 41);
+  width: 3.1rem;
+  height: 35.7rem;
+  float: right;
+  position: fixed;
+  z-index: 1;
+}
+.dash-2-col:hover{
+  width: 12rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.dash-remove {
+  display: none;
+}
+
+.dash-2-col:hover .dash-remove {
+  transition: all 0.12s ease-in-out;
+  display: inline;
+  padding-left: 1rem;
+}
+
+
+.dash-2-col:hover .dash-img-box {
+  display: flex;
+} */
+
+
+/* admin design page end here */
 
 .dash-1-col {
   background-color:rgb(33, 37, 41);
@@ -3131,4 +3312,4 @@ border-radius: 4px;
   padding: 3px 4px;
 }
   
-}
+} 

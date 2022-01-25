@@ -65,7 +65,7 @@ export default function SupportScreen() {
                 </div>
             </div>
             </div>
-            <Help/>
+        
         </div>
     )
 }

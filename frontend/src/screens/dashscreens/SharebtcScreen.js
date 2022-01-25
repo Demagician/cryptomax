@@ -59,7 +59,7 @@ export default function SharebtcScreen() {
                 </div>
             </div>
             </div>
-            <Help/>
+            
         </div>
     )
 }

@@ -24,7 +24,7 @@ export default function InvestScreen(){
                 
             </div>
             <Log/>
-            <Help/>
+           
         </div>
     )
 }

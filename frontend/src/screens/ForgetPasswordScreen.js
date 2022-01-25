@@ -1,19 +1,19 @@
 import React from 'react';
-import Help from '../components/Help';
 
-export default function ComingSoon() {
+export default function ForgetPasswordScreen() {
+
+    const submitHandler = (e) => {
+
+    }
+
     return(
         <div>
-             <div id='about-header'>
-              <div className='about-title'>
-                <span className='about-a'>C</span>
-                <span className='about-b'>o</span>
-                <span className='about-o'>m</span>
-                <span className='about-u'>i</span>ng Soon<span className='dot-1'>.</span>
-              </div>
-            </div>
+             <form className='forget-password-form' onSubmit={submitHandler}>
+                <input type='text' className='forget-password-input' placeholder='Enter Your Email'/><br/>
+                <button type="submit" className='forget-password-button btn btn-primary '>Reset Password</button>
+            </form>        
 
-            {/******************************************* * Footer section*  *********************************/}
+ {/******************************************* * Footer section*  *********************************/}
 
 <div id='footer'>
 <img src='/image/bitcoin-trade-img.png' alt='starter pack' className='footer-img' />
@@ -31,16 +31,14 @@ export default function ComingSoon() {
 <div className='footer-last-text'>Cryptomax - The easiest place to invest bitcoin..</div>
 </div>
 
-
-    {/******************************** * Whatsapp and  help button* *****************************************/}
-    <div className='fix-whatsapp-help'>
-    <a href='https://wa.me/message/C5T2YR3IDUU6A1'><i class="fab fa-whatsapp fa-3x"></i></a>
-    </div>
-    
-
-{/* <a href='#about-header' className='fix-button'></a><span className='fix-dot'></span> */}
-
+{/******************************** * Whatsapp and  help button* *****************************************/}
+<div className='fix-whatsapp-help'>
+                <a href='https://wa.me/message/C5T2YR3IDUU6A1'><i class="fab fa-whatsapp fa-3x"></i></a>
+                </div>
+                
+            
+            {/* <a href='#about-header' className='fix-button'></a><span className='fix-dot'></span> */}
 
         </div>
-    ) 
+    )
 }

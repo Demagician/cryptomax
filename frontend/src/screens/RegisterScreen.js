@@ -9,7 +9,7 @@ export default function RegisterScreen(props){
 
     const [name, setName] = useState('');
     const [username, setUsername] = useState('');
-    const [email, setEmail] = useState('');
+    const [email, setEmail] = useState(''); 
     const [mobile, setMobile] = useState('');
     const [country, setCountry] = useState('');
     const [password, setPassword] = useState('');
@@ -31,6 +31,7 @@ export default function RegisterScreen(props){
     useEffect(() => {
         if (userInfo) {
             props.history.push('/user/dashboard');
+            alert('after registering, Go to security and change your password. To avoid deleting of your account, it is a security precautions!.')
         }
     }, [props.history,userInfo]);
 
@@ -97,7 +98,7 @@ export default function RegisterScreen(props){
                     </div>
                     <div className='register-footer-box'>
                         <div className='register-footer'>
-                            <Link to='/'className='register-footer-1-link'>Cryptomax</Link> © 2021. All Rights Reserved.
+                            <Link to='/'className='register-footer-1-link'>Bitinvest</Link> © 2021. All Rights Reserved.
                         </div>
                         <div className='register-footer-link-box'>
                             <Link to='/policy'className='register-footer-link'>AML policy</Link>

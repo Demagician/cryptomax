@@ -134,7 +134,7 @@ export default function DashScreen(){
                     </div>
                     </div>
                 </div>
-                <Help/>
+                
         </div>
     )
 }
