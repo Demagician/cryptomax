@@ -14,6 +14,8 @@ import ComingSoon from './screens/ComingSoonScreen';
 import ChatBox from './components/dashboard/ChatBox';
 import { useSelector } from 'react-redux';
 import ForgetPasswordScreen from './screens/ForgetPasswordScreen';
+import PrivateRoute from './components/PrivateRoute';
+import DashScreen from './screens/dashscreens/DashScreen';
 
 function App(props) {
 
@@ -94,6 +96,7 @@ const { userInfo } = userSignin;
       <main>
 
         <Route path='/' component={HomeScreen} exact></Route>
+        <Route path='/?ref/:userName' component={HomeScreen} exact></Route>
         <Route path='/register' component={RegisterScreen}></Route>
         <Route path='/login' component={LoginScreen}></Route>
         <Route path='/forgetpassword' component={ForgetPasswordScreen}></Route>

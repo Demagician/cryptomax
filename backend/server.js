@@ -1,5 +1,5 @@
 import http from 'http';
-import {Server} from "Socket.io";
+import {Server} from "socket.io";
 import express from 'express';
 import userRouter from './routers/userRouter.js';
 import mongoose from 'mongoose';

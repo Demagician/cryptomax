@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import Help from '../components/Help';
 
 
-export default function HomeScreen() {
+export default function HomeScreen(props) {
+
+  const referral = props.match.params.userName
 
     return(
         <div>
